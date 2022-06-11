@@ -6,8 +6,19 @@ const inputField = document.getElementById('pass-input');
 
 
 eyeClose.addEventListener('click', () =>{
-    eyeClose.classList.remove('active');
-    eyeOpen.classList.add('active');
+    eyeClose.classList.add('active');
+    eyeOpen.style.display = "block"
 
     inputBox.classList.add('active')
+    inputField.classList.add('active')
+    inputField.type = "text";
+})
+
+eyeOpen.addEventListener('click', () =>{
+    eyeClose.classList.remove('active');
+    eyeOpen.style.display = "none"
+
+    inputBox.classList.remove('active')
+    inputField.classList.remove('active')
+    inputField.type = "password";
 })

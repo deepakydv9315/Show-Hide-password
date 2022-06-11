@@ -23,11 +23,7 @@ body{
     border-radius: 7px;
     background-color: #0D112B;
     color: #ffffff;
-}
-
-.input-box.active{
-    background-color: #ffffff;
-    color:#0D112B ;
+    transition: all 0.1s linear;
 }
 input{
     border: none;
@@ -36,6 +32,15 @@ input{
     font-size: 21px;
     background-color: transparent;
     color: #fff;
+    transition: all 0.1s linear;
+}
+.input-box.active{
+    background-color: #ffffff;
+    color:#0D112B !important;
+}
+
+input.active{
+    color: #0D112B;
 }
 
 ::placeholder{
@@ -51,17 +56,17 @@ input{
 .eye-icon i{
     cursor: pointer;
 }
+
 .fa-eye{
     display: none;
-    color:#0D112B;
-}
-.fa-eye-slash.active{
-    display: block;
-}
-.fa-eye.active{
-    display: block;
 }
 
+
+
+
+.fa-eye-slash.active{
+    display: none;
+}
 
 input:focus > .input-box{
     border: 1px solid blue;
