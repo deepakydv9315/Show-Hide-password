@@ -19,22 +19,49 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 7px 7px;
+    padding: 7px 10px;
     border-radius: 7px;
+    background-color: #0D112B;
+    color: #ffffff;
+}
 
+.input-box.active{
+    background-color: #ffffff;
+    color:#0D112B ;
 }
 input{
     border: none;
     padding: 5px 8px 5px 1px;
     flex:1; outline: none;
     font-size: 21px;
+    background-color: transparent;
+    color: #fff;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+:-ms-input-placeholder{
+    color: #fff;
+}
+::-ms-input-placeholder{
+    color: #fff;
 }
 .eye-icon i{
     cursor: pointer;
 }
-.fa-eye-slash{
+.fa-eye{
     display: none;
+    color:#0D112B;
 }
+.fa-eye-slash.active{
+    display: block;
+}
+.fa-eye.active{
+    display: block;
+}
+
 
 input:focus > .input-box{
     border: 1px solid blue;
